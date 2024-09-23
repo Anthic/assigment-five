@@ -24,7 +24,20 @@ document.getElementById('three-btn')
         }else{
             alert('Please!!! Donate Valid Amount 😢');
             document.getElementById('three-card-input').value='';
-        }
+        };
+
+               //history part
+        const historyDetails= document.createElement('div');
+        historyDetails.className=
+        "bg-white border-2 rounded-lg border-[#1111114D] py-5 px-7";
+
+        historyDetails.innerHTML=`
+            <p class="font-bold text-textColor text-xl">${threeCardInputValue.toFixed(2)}Donate for Flood Relief in Feni,Bangladesh</p>
+            <p class="font-semibold text-anotherColor text-md">${new Date().toLocaleDateString()}</p>
+        `;
+        console.log(historyDetails);
+        const historyList= document.getElementById('history-list');
+        historyList.insertBefore(historyDetails,historyList.firstChild)
             
     
 })

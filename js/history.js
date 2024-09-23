@@ -23,5 +23,6 @@ donationTab.classList.add(
     );
    const  mainHidden= document.getElementById("main-part");
    mainHidden.classList.add("hidden");
+   document.getElementById("history-main").classList.remove('hidden');
 })
 
