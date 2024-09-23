@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Web Site</title>
+    <!-- font-awesome  cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- tailwind and daisy ui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <!-- dynamic style -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                     btnColor:'#B4F461',
+                     textColor:'#111111',
+                     anotherColor:'#111111B3',
+
+              },
+              fontFamily:{
+                lexend:'Lexend',
+              },
+            }
+          }
+        }
+      </script>
+</head>
+<body class="font-lexend relative">
+    <!-- header part start here -->
+    <header class="">
+        <div class="bg-[#F9F7F3] py-4  ">
+            <div class="flex justify-between items-center gap-3 w-11/12 mx-auto">
+                <div class="py-2 px-6 bg-btnColor rounded-lg">
+                  <a class="font-bold text-sm">Blog</a>
+                </div>
+                <div class="flex gap-4">
+                    <div class="w-7"><img src="./images/logo.png" alt=""></div>
+                    <p class="text-textColor text-xl font-bold">Donate Bangladesh</p>
+                </div>
+                <div class="flex justify-center items-center  gap-2">
+                  <img src="./images/coin.png" alt="">
+                  <p id="total-amount" class="text-anotherColor text-sm font-bold">65500</p>BDT
+                </div>
+              </div>
+        </div>
+
+        <!-- two buttons part -->
+         <section class="mt-20 mb-10 static">
+            <div class="flex justify-center gap-4">
+                <button id="donationTab" class="py-3 px-6 bg-btnColor border-2 rounded-lg text-lg font-semibold">Donation</button>
+                <button id="historyTab" class="py-3 px-6 bg-transparent border-2 rounded-lg text-lg font-semibold border-[#1111114D]">History</button>
+            </div>
+         </section>
+    </header>
+    <!-- header part end here -->
+
+    <!-- main part start here -->
+    <main id="main-part">
+        <!-- card one part start here -->
+         <section id="" class="w-11/12 mx-auto py-4 px-4 border-2 rounded-xl shadow-lg my-3">
+            <!-- image part -->
+            <div class="grid grid-cols-2 gap-10 items-center">        
+                    <div class="col-span-1 ">
+                        <img class="w-11/12" src="./images/noakhali.png" alt="">
+                    </div>
+                <!--text part -->
+                <div class="col-span-1 grid grid-cols-1 gap-6 ">
+                    <div class=" w-3/12 flex items-center justify-center px-1  gap-2 bg-[#1111110D] rounded-lg"">
+                        <img src="./images/coin.png" alt="">
+                        <p id="one-card-balance" class="text-anotherColor text-lg font-bold">100</p>BDT
+                      </div>
+                      <h2 class="text-textColor text-xl font-extrabold" >Donate for Flood at Noakhali, Bangladesh</h2>
+                      <p class="text-anotherColor text-sm font-bold">Noakhali, Bangladesh, is currently grappling with devastating floods that have left thousands displaced and in urgent need of assistance. The floods have caused widespread damage to homes, infrastructure, and agricultural land, leaving communities struggling to meet their basic needs.</p>
+                      <input id="one-card-input" type="text"placeholder="Write Donation Amount" class="py-2 px-4 border-4 rounded-lg" />
+                      <button id="card-one-btn" class="py-2 px-6 bg-btnColor rounded-lg font-bold text-sm my-2">Donate Now</button>
+                </div>
+            </div>
+         </section>
+        <!-- card one part end here -->
+
+
+
+        <!-- card two start part -->
+        <section class="w-11/12 mx-auto py-4 px-4 border-2 rounded-xl shadow-lg my-3">
+          <!-- image part -->
+          <div class="grid grid-cols-2 gap-10 items-center">        
+                  <div class="col-span-1 ">
+                      <img class="w-11/12" src="./images/feni.png" alt="">
+                  </div>
+              <!--text part -->
+              <div class="col-span-1 grid grid-cols-1 gap-6 ">
+                  <div class=" w-3/12 flex items-center justify-center px-1  gap-2 bg-[#1111110D] rounded-lg"">
+                      <img src="./images/coin.png" alt="">
+                      <p id="two-card-balance" class="text-anotherColor text-lg font-bold">100 BDT</p>
+                    </div>
+                    <h2 class="text-textColor text-xl font-extrabold" >Donate for Flood Relief in Feni,Bangladesh</h2>
+                    <p class="text-anotherColor text-sm font-bold">The recent floods in Feni, Bangladesh have devastated countless lives and communities. As the waters recede, the urgent need for humanitarian aid becomes increasingly apparent. To make a tangible difference and help those affected by this natural disaster, we urge you to donate to reputable organizations working on the ground.</p>
+                    <input id="two-card-input" type="text"placeholder="Write Donation Amount" class="py-2 px-4 border-4 rounded-lg" />
+                    <button id="two-btn" class="py-2 px-6 bg-btnColor rounded-lg font-bold text-sm my-2">Donate Now</button>
+              </div>
+          </div>
+       </section>
+         <!-- card two end part -->
+ 
+
+
+         <!-- card three part start here -->
+         <section class="w-11/12 mx-auto py-4 px-4 border-2 rounded-xl shadow-lg my-3">
+          <!-- image part -->
+          <div class="grid grid-cols-2 gap-10 items-center">        
+                  <div class="col-span-1 ">
+                      <img class="w-11/12" src="./images/quota-protest.png" alt="">
+                  </div>
+              <!--text part -->
+              <div class="col-span-1 grid grid-cols-1 gap-6 ">
+                  <div class=" w-3/12 flex items-center justify-center px-1  gap-2 bg-[#1111110D] rounded-lg"">
+                      <img src="./images/coin.png" alt="">
+                      <p id="three-card-balance" class="text-anotherColor text-lg font-bold">100 BDT</p>
+                    </div>
+                    <h2 class="text-textColor text-xl font-extrabold" >Aid for Injured in the Quota Movement</h2>
+                    <p class="text-anotherColor text-sm font-bold">The Quota Movement in Bangladesh, a peaceful protest demanding equal rights for students from underprivileged backgrounds, has been marred by violence. Many innocent individuals have been injured during the demonstrations, leaving them in dire need of medical attention and support.</p>
+                    <input id="three-card-input" type="text"placeholder="Write Donation Amount" class="py-2 px-4 border-4 rounded-lg" />
+                    <button id="three-btn" class="py-2 px-6 bg-btnColor rounded-lg font-bold text-sm my-2">Donate Now</button>
+              </div>
+          </div>
+       </section>
+        <!-- card three part start here -->
+
+
+
+    </main>
+    <!-- main part end here -->
+
+    <!-- history part start -->
+
+    <div class="w-11/12 mx-auto hidden">
+            <h2 class="text-textColor font-extrabold text-2xl text-center my-8">History Details</h2>
+      <div id="history-list">
+
+      </div>
+    </div>
+
+
+    <!-- history part start -->
+
+    <!-- javascript links -->
+
+    <script src="./js/cardonedonate.js"></script>
+     <script src="./js/cardtwodonate.js"></script>
+     <script src="./js/carddonatethree.js"></script>
+     <script src="./js/history.js"></script>
+
+</body>
+</html>
