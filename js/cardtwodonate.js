@@ -30,15 +30,15 @@ document.getElementById('two-btn')
                //history part
                const historyDetails= document.createElement('div');
                historyDetails.className=
-               "bg-white border-2 rounded-lg border-[#1111114D] py-5 px-7";
+               "bg-white border-2 rounded-lg border-[#1111114D] py-5 px-7 my-3";
        
                historyDetails.innerHTML=`
-                   <p class="font-bold text-textColor text-xl">${twoCardInputValue.toFixed(2)}Aid for Injured in the Quota Movement</p>
+                   <p class="font-bold text-textColor text-xl">${twoCardInputValue.toFixed(2)}Donate for Flood Relief in Feni,Bangladesh</p>
                    <p class="font-semibold text-anotherColor text-md">${new Date().toLocaleDateString()}</p>
                `;
                console.log(historyDetails);
                const historyList= document.getElementById('history-list');
-               historyList.insertBefore(historyDetails,historyList.firstChild)
+               historyList.insertBefore(historyDetails,historyList.lastChild)
             
     
 })

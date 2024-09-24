@@ -29,15 +29,15 @@ document.getElementById('card-one-btn')
         //history part
         const historyDetails= document.createElement('div');
         historyDetails.className=
-        "bg-white border-2 rounded-lg border-[#1111114D] py-5 px-7";
+        "bg-white border-2 rounded-lg border-[#1111114D] py-5 px-7 my-3";
 
         historyDetails.innerHTML=`
-            <p class="font-bold text-textColor text-xl">${oneCardInputValue.toFixed(2)}Taka is Donated for famine-2024 at Feni,Bangladesh</p>
+            <p class="font-bold text-textColor text-xl">${oneCardInputValue.toFixed(2)}Taka is Donated for famine-2024 at Noakhali,Bangladesh</p>
             <p class="font-semibold text-anotherColor text-md">${new Date().toLocaleDateString()}</p>
         `;
         console.log(historyDetails);
         const historyList= document.getElementById('history-list');
-        historyList.insertBefore(historyDetails,historyList.firstChild)
+        historyList.insertBefore(historyDetails,historyList.lastChild)
             
     
 })

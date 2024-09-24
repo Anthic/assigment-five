@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Web Site</title>
+    <!-- font-awesome  cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- tailwind and daisy ui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <!-- dynamic style -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                     btnColor:'#B4F461',
+                     textColor:'#111111',
+                     anotherColor:'#111111B3',
+
+              },
+              fontFamily:{
+                lexend:'Lexend',
+              },
+            }
+          }
+        }
+      </script>
+</head>
+<body class="font-lexend ">
+    <!-- header part start here -->
+    <header class="">
+        <div class="bg-[#F9F7F3] py-4  ">
+            <div class="flex justify-between items-center gap-3 w-11/12 mx-auto">
+                <div class="py-2 px-6 bg-btnColor rounded-lg">
+                  <a id="back" class="font-bold text-sm">Home</a>
+                </div>
+                <div class="flex gap-4">
+                    <div class="w-7"><img src="./images/logo.png" alt=""></div>
+                    <p class="text-textColor text-xl font-bold">Donate Bangladesh</p>
+                </div>
+                <div class="flex justify-center items-center  gap-2">
+                  <img src="./images/coin.png" alt="">
+                  <p id="total-amount" class="text-anotherColor text-sm font-bold">65500</p>BDT
+                </div>
+              </div>
+        </div>
+        <!-- header part -->
+
+        <!-- question part -->
+            <section class="w-11/12 mx-auto my-14">
+                <h1 class="text-textColor font-bold text-2xl">Some Questions And With Answer <i class="fa-solid fa-question text-4xl"></i></h1>
+                
+                <div class="main-question my-5">
+                    <div class="collapse collapse-arrow shadow-lg bg-gradient-to-b from-teal-400 to-green-200">
+                        <input type="radio" name="my-accordion-2" checked="checked" />
+                        <div class="collapse-title text-2xl font-extrabold text-textolor">What is the Document Object Model (DOM)?</div>
+                        <div class="collapse-content">
+                          <p class="text-textColor text-lg font-bold">The Document Object Model (DOM) is a programming interface for interacting <br> with HTML, XML, and other structured documents.</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-arrow shadow-lg bg-gradient-to-b from-teal-400 to-green-200 ">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-2xl font-extrabold text-textoloredium">How do you select an element from the DOM?</div>
+                        <div class="collapse-content">
+                          <p class="text-textColor text-lg font-bold">We can select DOM  By ID, By class,By tag name,By query selector,By query selector all </p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-arrow shadow-lg bg-gradient-to-b from-teal-400 to-green-200">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-2xl font-extrabold text-textolor">What is event delegation in the context of the DOM, and why is it useful?</div>
+                        <div class="collapse-content">
+                          <p class="text-textColor text-lg font-bold">
+                            Event Delegation in the DOM refers to the technique of attaching an event listener to a <br> parent element instead of directly to each child element.</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-arrow shadow-lg bg-gradient-to-b from-teal-400 to-green-200">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-2xl font-extrabold text-textolor">How do you manipulate an element's attributes and styles using the DOM?</div>
+                        <div class="collapse-content">
+                          <p class="text-textColor text-lg font-bold"> Accessing and Modifying Attributes("setAttribute()","getAttribute()") <br>Accessing and Modifying Styles("style property","getComputedStyle()")</p>
+                        </div>
+                      </div>
+                </div>
+                
+            </section>
+        <!-- question part -->
+
+        <script src="./js/history.js"></script>
+</body>
+</html>
