@@ -1,4 +1,4 @@
-document.getElementById('card-one-btn')
+ document.getElementById('card-one-btn')
     .addEventListener('click', function(event){
 
             // remove page load problem
