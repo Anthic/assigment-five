@@ -21,6 +21,17 @@ document.getElementById('two-btn')
             console.log(accountSubtwo);
             document.getElementById('total-amount').innerText= accountSubtwo.toFixed(2);
             document.getElementById('two-card-input').value='';
+
+            // modal part start here
+            document.getElementById('my-modal').checked = true; 
+            //  Close the modal when clicking outside of it
+                    const modal = document.querySelector('.modal');
+                    modal.addEventListener('click', function(event) {
+                        if (event.target === modal) {
+                            document.getElementById('my-modal').checked = false; 
+                        }
+                    });
+
         }else{
             alert('Please!!! Donate Valid Amount 😢');
             document.getElementById('two-card-input').value='';
@@ -39,6 +50,11 @@ document.getElementById('two-btn')
                console.log(historyDetails);
                const historyList= document.getElementById('history-list');
                historyList.insertBefore(historyDetails,historyList.lastChild)
-            
-    
-})
+
+
+               document.getElementById('open-modal').addEventListener('click', function() {
+                document.getElementById('my-modal').checked = true; 
+            });
+   
+});
+

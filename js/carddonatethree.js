@@ -21,6 +21,16 @@ document.getElementById('three-btn')
             console.log(accountSubthree);
             document.getElementById('total-amount').innerText= accountSubthree.toFixed(2);
             document.getElementById('three-card-input').value='';
+        // modal part start here
+        document.getElementById('my-modal').checked = true; 
+        //  Close the modal when clicking outside of it
+            const modal = document.querySelector('.modal');
+            modal.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    document.getElementById('my-modal').checked = false; 
+                }
+            });
+
         }else{
             alert('Please!!! Donate Valid Amount 😢');
             document.getElementById('three-card-input').value='';

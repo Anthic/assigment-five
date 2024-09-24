@@ -21,6 +21,15 @@ document.getElementById('card-one-btn')
             console.log(accountSub);
             document.getElementById('total-amount').innerText= accountSub.toFixed(2);
             document.getElementById('one-card-input').value='';
+            // modal part start here
+            document.getElementById('my-modal').checked = true; 
+            //  Close the modal when clicking outside of it
+                    const modal = document.querySelector('.modal');
+                    modal.addEventListener('click', function(event) {
+                        if (event.target === modal) {
+                            document.getElementById('my-modal').checked = false; 
+                        }
+                    });
         }else{
             alert('Please!!! Donate Valid Amount 😢');
             document.getElementById('one-card-input').value='';
