@@ -3,15 +3,11 @@ const donationTab= document.getElementById('donationTab');
 
 // history button work
  historyTab.addEventListener('click',function(){
-    historyTab.classList.add(       
-        "bg-btnColor"      
-);
+    historyTab.classList.add("bg-btnColor");
 
 historyTab.classList.remove('bg-transparent','border-[#1111114D]');
 
-donationTab.classList.remove(
-    "bg-btnColor"           
-);
+donationTab.classList.remove("bg-btnColor");
 donationTab.classList.add(
         "border-2",
         "rounded-lg" ,
