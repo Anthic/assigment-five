@@ -23,7 +23,7 @@
           theme: {
             extend: {
               colors: {
-                     btnColor:'#B4F461',
+                     btnColor:'#27D3D6',
                      textColor:'#111111',
                      anotherColor:'#111111B3',
 
@@ -36,10 +36,10 @@
         }
       </script>
 </head>
-<body class="font-lexend ">
+<body class="font-lexend bg-gradient-to-r from-teal-100 to-cyan-100 shadow-box pb-60">
     <!-- header part start here -->
     <header class="">
-        <div class="bg-[#F9F7F3] py-4  ">
+        <div class=" py-4  ">
             <div class="flex justify-between items-center gap-3 w-11/12 mx-auto">
                 <div class="py-2 px-6 bg-btnColor rounded-lg">
                   <button onclick="homeTab()" class="font-bold text-sm">Home</button>
@@ -48,19 +48,22 @@
                     <div class="w-7"><img src="./images/logo.png" alt=""></div>
                     <p class="text-textColor text-xl font-bold">Donate Bangladesh</p>
                 </div>
-                <div class="flex justify-center items-center  gap-2">
+                <div class="flex justify-center items-center  gap-2 py-2 px-3 bg-gradient-to-r from-teal-50 to-cyan-50 rounded-xl ">
                   <img src="./images/coin.png" alt="">
-                  <p id="total-amount" class="text-anotherColor text-sm font-bold">65500</p>BDT
+                  
+                  <span id="total-amount" class="text-anotherColor text-sm font-bold">650000</span>BDT
                 </div>
               </div>
         </div>
+ 
+          <!-- header part end here -->
         <!-- header part -->
 
         <!-- question part -->
-            <section class="w-11/12 mx-auto my-14">
+            <section class="w-11/12 mx-auto my-14 ">
                 <h1 class="text-textColor font-bold text-2xl">Some Questions And With Answer <i class="fa-solid fa-question text-4xl"></i></h1>
                 
-                <div class="main-question my-5">
+                <div class="main-question mt-6 mb-10 ">
                     <div class="collapse collapse-arrow shadow-lg bg-gradient-to-b from-teal-400 to-green-200">
                         <input type="radio" name="my-accordion-2" checked="checked" />
                         <div class="collapse-title text-2xl font-extrabold text-textolor">What is the Document Object Model (DOM)?</div>

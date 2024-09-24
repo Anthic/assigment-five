@@ -41,7 +41,7 @@ document.getElementById('two-btn')
                //history part
                const historyDetails= document.createElement('div');
                historyDetails.className=
-               "bg-white border-2 rounded-lg border-[#1111114D] py-5 px-7 my-3";
+               "bg-gradient-to-r from-teal-100 to-cyan-100 shadow-box shadow-lg border-2 rounded-lg border-[#1111114D] py-5 px-7 my-3";
        
                historyDetails.innerHTML=`
                    <p class="font-bold text-textColor text-xl">${twoCardInputValue.toFixed(2)}Donate for Flood Relief in Feni,Bangladesh</p>
